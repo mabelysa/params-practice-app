@@ -5,5 +5,5 @@ Rails.application.routes.draw do
 
   get "/segment_phrase/:word" => "params#segment_params"
 
-  post ""
+  post "/body_phrase" => "params#body_params"
 end

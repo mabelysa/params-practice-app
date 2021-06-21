@@ -10,4 +10,10 @@ class ParamsController < ApplicationController
     output = input.upcase
     render json: { message: output }
   end
+
+  def body_params
+    input = params["phrase"]
+    output = input.upcase
+    render json: { message: output }
+  end
 end
